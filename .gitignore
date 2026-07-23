@@ -1,3 +1,7 @@
+#ide content
+.idea
+.junie
+
 # Logs
 logs
 *.log

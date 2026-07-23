@@ -1,0 +1,67 @@
+/*!*****************************************************************************
+ * Project         : BeginPlay                                                *
+ * File               : default.scss                                          *
+ * Author          : Sagar                                                    *
+ *                                                                            *
+ * Copyright (c) 2026 Sagar.                                                  *
+ * All Rights Reserved.                                                       *
+ *                                                                            *
+ * This project is published as part of my professional portfolio.            *
+ * Viewing the source code is permitted for evaluation purposes only.         *
+ * No license is granted to copy, modify, redistribute, or incorporate any    *
+ * portion of this code into other projects without prior written permission. *
+ ******************************************************************************/
+@use "../themes/_theme-default";
+
+@use "../components/footer";
+
+:root {
+  --header-height: 4.5rem;
+  --content-maxWidth: 90%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+h2
+{
+  font-size: 1.75rem;
+}
+a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+button
+{
+  cursor: pointer;
+}
+hr{
+  color: var(--border);
+  width: var(--content-maxWidth);
+}

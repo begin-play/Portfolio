@@ -1,0 +1,42 @@
+{
+  "heading": "Interested in working together?",
+  "text": "I'm open to full-time gameplay programming roles, freelance projects, and meaningful collaborations. If you're building something interesting or would like to discuss gameplay systems, tools, or engine architecture, I'd be glad to connect.",
+  "email": "contact@beginplay.me",
+  "links": [
+    {
+      "title": "LinkedIn",
+      "link": "https://linkedin.com/in/s4g4rkumar/",
+      "label": "LinkedIn Profile",
+      "asset-src": "linkedin.svg"
+    },
+    {
+      "title": "Github",
+      "link": "https://github.com/begin-play/",
+      "label": "Github Profile",
+      "asset-src": "github.svg"
+    },
+    {
+      "title": "Steam",
+      "link": "https://steamcommunity.com/id/Ghost_47_cs/",
+      "label": "Steam Profile",
+      "asset-src": "steam.svg"
+    },
+    {
+      "title": "X",
+      "link": "https://x.com/cats_can_code/",
+      "label": "X Profile",
+      "asset-src": "twitter-x.svg"
+    },
+    {
+      "title": "Instagram",
+      "link": "https://instagram.com/catscancode/",
+      "label": "Instagram Profile",
+      "asset-src": "instagram.svg"
+    }
+  ],
+  "copyright-notice": [
+    "&copy; 2026 Sagar. All Rights Reserved.",
+    "Designed & Developed by Sagar.",
+    "Built with Node.js."
+  ]
+}

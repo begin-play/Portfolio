@@ -1,0 +1,41 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "sass --watch src/scss:dist/css",
+    "watch:js": "nodemon --watch src/js -e js --exec \"npm run build:js\"",
+    "dev": "npm-run-all --parallel watch:scss watch:js",
+    "build:scss": "sass src/scss:dist/public/css --style=expanded",
+    "build:js": "node build/build.js",
+    "build": "npm-run-all build:scss build:js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/begin-play/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/begin-play/Portfolio/issues"
+  },
+  "imports": {
+    "#components/*": "./src/js/components/*.js",
+    "#layouts/*": "./src/js/layouts/*.js",
+    "#pages/*": "./src/js/pages/*.js",
+    "#utils/*": "./src/js/utils/*.js",
+    "#data/*": "./src/data/*.json"
+  },
+  "homepage": "https://github.com/begin-play/Portfolio#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.101.7"
+  },
+  "allowScripts": {
+    "@parcel/watcher@2.6.0": true
+  }
+}

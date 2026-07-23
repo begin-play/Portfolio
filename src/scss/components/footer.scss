@@ -1,0 +1,76 @@
+/*!*****************************************************************************
+ * Project         : BeginPlay                                                *
+ * File               : footer.scss                                           *
+ * Author          : Sagar                                                    *
+ *                                                                            *
+ * Copyright (c) 2026 Sagar.                                                  *
+ * All Rights Reserved.                                                       *
+ *                                                                            *
+ * This project is published as part of my professional portfolio.            *
+ * Viewing the source code is permitted for evaluation purposes only.         *
+ * No license is granted to copy, modify, redistribute, or incorporate any    *
+ * portion of this code into other projects without prior written permission. *
+ ******************************************************************************/
+
+footer
+{
+  background: var(--surface);
+  border-top: 2px solid var(--border);
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.contact-description{
+  margin: auto;
+  max-width:36rem;
+}
+
+.copy-email {
+  padding: .75rem 1.5rem;
+  border-radius: 1.5rem;
+  background: var(--background);
+  color: var(--text-primary);
+  border: solid 2px var(--accent);
+
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: background 0.2s,color 0.2s;
+}
+.copy-email:hover,
+.copy-email:focus{
+  background: var(--accent);
+  color: var(--background);
+}
+.copy-email:disabled{
+  cursor: default;
+  opacity: 0.8;
+}
+
+
+.social-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+.social-list-item
+{
+  display: inline-flex;
+  align-items: center;
+  gap:0.5rem;
+}
+
+.social-text
+{
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: color .2s ease;
+}
+
+.social-icon{
+  width: 1.25rem;
+  height: 1.25rem;
+}
