@@ -12,5 +12,5 @@
  * portion of this code into other projects without prior written permission. *
  ******************************************************************************/
 export const paths = {
-    iconsFooter: `../src/assets/icons/footer/`,
+    iconsFooter: `./public/icons/footer/`,
 }

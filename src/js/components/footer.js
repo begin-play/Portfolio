@@ -22,9 +22,9 @@ export function FooterButton() {
 
 const addressContent = '<address>' +
     FooterButton() +
-    '<ul class="social-list">' +
+    '\n<ul class="social-list">' +
     data.links.map(item =>
-        '<li>' +
+        '\n<li>' +
         '\n<a class="social-list-item" href="' + item.link + '" target="_blank" rel="noopener noreferrer">' +
         '\n<img class="social-icon" src="' + paths.iconsFooter + item["asset-src"] + '"' +
         ' alt="" aria-label="' + item.label + '" aria-hidden="true">' +
@@ -34,7 +34,7 @@ const addressContent = '<address>' +
 
 const copyrightText = data["copyright-notice"].map(line => line + '<br>').join('');
 
-const footerHtml = '<footer><section class= "contact-description">' +
+const footerHtml = '\n<footer>\n<section class= "contact-description">' +
     '\n<h2>' + data.heading + '</h2>' +
     '\n<p>' + data.text + '</p>' +
     addressContent + '\n</section>\n' +
