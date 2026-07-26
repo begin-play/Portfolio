@@ -12,7 +12,7 @@
  * portion of this code into other projects without prior written permission. *
  ******************************************************************************/
 
-import {Navbar} from '#components/navbar';
+import {GenerateHeader} from '#components/header';
 import {Footer} from '#components/footer';
 import {DEFAULT_THEME} from "#components/theme";
 
@@ -36,11 +36,11 @@ export function DefaultLayout(title,stylesheetName, content) {
         '</title>\n' +
         GenerateHead(stylesheetName) +
         '\n</head>' +
-        '\n<body>' +
-        Navbar() +
-        '\n<main>' +
+        '\n<body>\n' +
+        GenerateHeader() +
+        '\n<main>\n' +
         content +
-        '</main>' +
+        '</main>\n' +
         Footer() +
         '\n<script type="module" src="./public/js/main.js"></script>' +
         '\n</body>' +

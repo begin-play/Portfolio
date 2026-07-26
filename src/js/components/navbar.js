@@ -12,27 +12,40 @@
  * portion of this code into other projects without prior written permission. *
  ******************************************************************************/
 import data from '#data/navitems' with { type: "json" };
+import * as Console from "node:console";
 
-function createNavbarItems()
+function CreateNavbarItems()
 {
+    Console.log("createNavbarItems function called");
     let navbarItems = '';
     data.forEach(item => {
-        let classtoAdd = '';
-        if(item.itemType === 'link')
-            classtoAdd = 'nav-link';
-        else
-            classtoAdd = 'nav-item';
 
-        navbarItems += '\n<li class="' + classtoAdd + '"><a href="' + item.itemLink + '">' + item.itemName + '</a></li>';
+console.log("item: ", item);
+        navbarItems += '\n<li' +  '><a href="' + item.itemLink + '">' + item.itemName + '</a></li>';
     });
     return navbarItems;
 }
 
-export function Navbar()
+export function GenerateNavbar()
 {
-    return '\n<nav>' +
-        '\n<ul>'+
-       createNavbarItems()+
-        '\n</ul>'+
+    Console.log("Navbar function called");
+    return '<nav>'+
+        '<button>'+
+            'Menu'+
+       '</button>' +
+'        <div>'+
+            '<div >'+
+                '<button>'+
+
+                '</button>'+
+            '</div>'+
+            '<ul>'+
+     CreateNavbarItems() +
+            '</ul>'+
+            '<div >'+
+                '<p>&copy; 2026 Sagar Kumar. All rights reserved.</p>'+
+            '</div>'+
+        '</div>'+
         '</nav>';
+
 }
