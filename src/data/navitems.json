@@ -1,0 +1,33 @@
+[
+  {
+    "itemName": "projects",
+    "itemType": "link",
+    "itemLink": "/"
+  },
+  {
+    "itemName": "career",
+    "itemType": "link",
+    "itemLink": "/about"
+  },
+  {
+    "itemName": "blog",
+    "itemType": "link",
+    "itemLink": ""
+  },
+  {
+    "itemName": "about",
+    "itemType": "link",
+    "itemLink": ""
+  },
+  {
+    "itemName": "contact",
+    "itemType": "link",
+    "itemLink": ""
+  },
+  {
+    "itemName": "Play",
+    "itemType": "Button",
+    "itemLink": ""
+  }
+]
+

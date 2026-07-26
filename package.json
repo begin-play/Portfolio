@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/begin-play/Portfolio#readme",
   "devDependencies": {
-    "npm-run-all": "^4.1.5",
+    "npm-run-all": "^1.1.3",
     "sass": "^1.101.7"
   },
   "allowScripts": {

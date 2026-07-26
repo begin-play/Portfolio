@@ -11,15 +11,28 @@
  * No license is granted to copy, modify, redistribute, or incorporate any    *
  * portion of this code into other projects without prior written permission. *
  ******************************************************************************/
+import data from '#data/navitems' with { type: "json" };
+
+function createNavbarItems()
+{
+    let navbarItems = '';
+    data.forEach(item => {
+        let classtoAdd = '';
+        if(item.itemType === 'link')
+            classtoAdd = 'nav-link';
+        else
+            classtoAdd = 'nav-item';
+
+        navbarItems += '\n<li class="' + classtoAdd + '"><a href="' + item.itemLink + '">' + item.itemName + '</a></li>';
+    });
+    return navbarItems;
+}
 
 export function Navbar()
 {
-    return '<nav>' +
-        '<a href="/home">Home</a>' +
-        '<a href="/projects">Projects</a>' +
-        '<a href="/blogs">blogs</a>' +
-        '<a href="/career">career</a>' +
-        '<a href="/about">about</a>' +
-        '<a href="/contact">contact</a>' +
+    return '\n<nav>' +
+        '\n<ul>'+
+       createNavbarItems()+
+        '\n</ul>'+
         '</nav>';
 }
