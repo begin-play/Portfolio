@@ -1,15 +1,17 @@
 import {GenerateNavbar} from '#components/navbar';
-import * as Console from "node:console";
+
 
 export function GenerateHeader() {
-  Console.log("Header function called");
-    return '<div>'+
-       '   <div>'+
-              '<a>'+
-                  '<span>Sagar Kumar</span>'+
-              '</a>'+
-          '</div>'+
-      GenerateNavbar() +
-          '</div>';
 
-  }
+    return '<header class="header-container">' +
+        '\n<div class="header-content">' +
+        '\n<div class="logo-container">' +
+        '\n<a href="index.html" aria-label="Home">' +
+        '\n<span class="logo-text">Sagar Kumar</span>' +
+        '\n</a>' +
+        '\n</div>' +
+        GenerateNavbar() +
+        '\n</div>' +
+        '\n</header>';
+
+}

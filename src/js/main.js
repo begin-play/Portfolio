@@ -12,7 +12,14 @@
  * portion of this code into other projects without prior written permission. *
  ******************************************************************************/
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", Init);
+
+function Init() {
+    // SetupNavigationMenu();
+    SetupEmailCopyButton();
+}
+
+function SetupEmailCopyButton() {
     let copyButton = document.querySelector(".copy-email");
     copyButton.addEventListener("click", async () => {
         console.log("Copying email...");
@@ -25,5 +32,51 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 3000);
         });
     })
+}
+//
+// const navToggle = document.getElementById("nav-toggle");
+// const navContainer = document.getElementById("nav-list-container");
+// const navClose = document.getElementById("nav-close");
+// const navLinks = document.querySelectorAll("#nav-list a");
 
-})
+// function SetupNavigationMenu() {
+//
+//
+//     if (navToggle) {
+//         navToggle.addEventListener("click", () => toggleMenu());
+//     }
+//
+//     if (navClose) {
+//         navClose.addEventListener("click", () => toggleMenu(true));
+//     }
+//
+//     if (navLinks) {
+//         navLinks.forEach(link => {
+//             link.addEventListener("click", () => toggleMenu(true));
+//         });
+//     }
+//
+//
+// }
+//
+// const toggleMenu = (forceClose = false) => {
+//     if (!navContainer || !navToggle) return;
+//
+//     const isActive = forceClose ? false : !navContainer.classList.contains("is-active");
+//     navContainer.classList.toggle("is-active", isActive);
+//     navToggle.setAttribute("aria-expanded", isActive ? "true" : "false");
+//     document.body.classList.toggle("menu-open", isActive);
+//
+//     if (isActive && navClose) {
+//         navClose.focus({preventScroll: true});
+//     } else if (!isActive && navToggle) {
+//         navToggle.focus({preventScroll: true});
+//     }
+// };
+//
+// function openInNewTab(url) {
+//     const win = window.open(url, '_blank');
+//     if (win) {
+//         win.focus();
+//     }
+// }

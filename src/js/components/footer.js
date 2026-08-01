@@ -16,7 +16,7 @@ import data from "#data/footer" with {type: 'json'};
 import {paths} from "./paths.js";
 
 export function FooterButton() {
-    return '<button class="copy-email" data-email="'+data.email+'">Copy email</button>';
+    return '<button class="default-button rounded-button" data-email="'+data.email+'">Copy email</button>';
 }
 
 

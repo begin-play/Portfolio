@@ -1,4 +1,4 @@
-.site-header {
+.header-container {
   background: var(--surface);
   border-bottom: 0.0625rem solid var(--border);
   position: sticky;
@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.header-container {
+.header-content {
   max-width: 90rem;
   margin: 0 auto;
   padding: 1rem 5vw;
@@ -16,3 +16,15 @@
   align-items: center;
   gap: 1rem;
 }
+
+.navbar-menu{
+  display: none;
+}
+
+.navbar-mobile-header,
+.navbar-mobile-footer {
+  display: none;
+}
+
+
+
